@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="packages\**" />
+    <Compile Remove="publishWin\**" />
+    <Compile Remove="publish\**" />
+    <EmbeddedResource Remove="packages\**" />
+    <EmbeddedResource Remove="publishWin\**" />
+    <EmbeddedResource Remove="publish\**" />
+    <None Remove="packages\**" />
+    <None Remove="publishWin\**" />
+    <None Remove="publish\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WebWindow" Version="0.1.0-20191120.6" />
+  </ItemGroup>
+
+</Project>
